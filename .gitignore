@@ -1,0 +1,10 @@
+# Build files
+dist/
+
+# Modules
+node_modules/
+
+# all mp3 files
+*.mp3
+
+.env

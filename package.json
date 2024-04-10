@@ -1,0 +1,51 @@
+{
+  "name": "tiktok-tts.js",
+  "version": "1.0.0",
+  "author": "im-xnugget",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/im-xnugget/tiktok-tts.git"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "bun-plugin-dts-auto": "^0.10.0",
+    "rimraf": "^5.0.5",
+    "tsup": "^8.0.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/im-xnugget/tiktok-tts/issues"
+  },
+  "description": "Create TikTok text-to-speech audio files.",
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://github.com/im-xnugget/tiktok-tts#readme",
+  "keywords": [
+    "tiktok",
+    "text to speech",
+    "text-to-speech",
+    "bryan",
+    "ai bryan",
+    "ai voice",
+    "ai"
+  ],
+  "license": "GPL-3.0",
+  "packageManager": "bun@1.1.2",
+  "scripts": {
+    "test": "bun test",
+    "build": "bun rimraf ./dist && bun tsup",
+    "start": "bun dist/index.js",
+    "publish": "npm publish",
+    "build:publish": "bun run build && npm publish"
+  },
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "dependencies": {
+    "axios": "^1.6.8"
+  }
+}
